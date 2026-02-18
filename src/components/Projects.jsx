@@ -24,8 +24,7 @@ export default function Projects() {
           />
           <h1 className="text-3xl mb-3 mt-5">Sorteador</h1>
           <p>
-            Website onde você pode encontrar sprites de qualquer Pokemon a
-            partir de seu nome.
+            Sistema de Sorteio onde possibilita sortear nomes e intervalos de números.
           </p>
           <div className="flex">
             <a
