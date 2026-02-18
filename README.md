@@ -1,16 +1,30 @@
-# React + Vite
+# Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal desenvolvido para apresentar quem eu sou, meus cursos e os projetos que já desenvolvi.
+O objetivo deste projeto é centralizar minhas experiências, aprendizados e evolução na área de desenvolvimento.
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
 
-## React Compiler
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+- Framer Motion
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JavaScript
+
+## Como executar o projeto
+```bash
+# clonar o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# entrar na pasta
+cd seu-repositorio
+
+# instalar dependências
+npm install
+
+# rodar o projeto
+npm run dev
