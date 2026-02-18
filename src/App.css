@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, black, rgb(26, 26, 26));
+  color: white;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  z-index: 2;
+}
+
+a {
+  position: relative;
+  font-size: 20px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* profile card styles */
+
+#profileCard {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(22, 22, 22, 0.55)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+#profileCard:hover{
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+/* education card */
+
+#education {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(22, 22, 22, 0.55)
+  );
+  width: 900px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+#education:hover{
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+/* projectsCard */
+
+#projectsCard {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(22, 22, 22, 0.55)
+  );
+  width: 1000px;
+  padding: 30px;
+  border: 1px solid rgb(68, 68, 68);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+#projectsCard:hover{
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+#projectsCard div #project1{
+  width: 50%;
+}
+
+#projectsCard div #project2{
+  width: 50%;
+}
+
+/* background container */
+
+.background-container {
+  position: fixed;
+  inset: 0; 
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* contact */
+
+#contact{
+  background: linear-gradient(279deg, rgba(0, 0, 0, 0.55), rgba(22, 22, 22, 0.55));
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+#contactLink:hover::after{
+  width: 0;
+}
+
+/* RESPOSIVIDADE */
+
+@media(max-width: 1030px){
+
+  header div{
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  header a {
+    display: none;
+  }
+
+  #profileCard{
+    width: 350px;
+  }
+
+  #profileCard img{
+    width: 180px;
+  }
+
+  #profileCard h1{
+    font-size: 27px;
+  }
+
+  #education{
+    width: 350px;
+  }
+
+  #education h1{
+    font-size: 25px;
+  }
+
+  #education div h1{
+    font-size: 23px;
+  }
+
+  #education div h2{
+    font-size: 18px;
+  }
+
+  #projectsCard{
+    width: 350px;
+  }
+
+  #projectsCard div{
+    display: block;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #projectsCard div #project1{
+    width: 100%;
+  }
+
+  #projectsCard div #project2{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #contact{
+    width: 350px;
+  }
+
+}
