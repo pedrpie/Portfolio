@@ -14,7 +14,8 @@ export default function ProfileCard() {
             className="border border-gray-500 max-w-200 m-auto mt-30 p-10 text-center rounded-xl hover:border-white hover:shadow-lg"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.4 }}>
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true, amount: 0.2 }}>
 
             <img 
                 className="m-auto rounded-full border-2 border-white mb-4" 

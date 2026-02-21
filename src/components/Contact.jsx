@@ -7,7 +7,8 @@ export default function Contact() {
       id="contact"
       initial={{ x: -50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.7 }}>
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true, amount: 0.2 }}>
 
       <h1 className="text-3xl mb-5">Entrar em Contato</h1>
       <div>

@@ -11,7 +11,8 @@ export default function Projects() {
       className="m-auto mt-10 rounded-xl"
       initial={{ x:-50, opacity: 0 }}
       animate={{ x: 0, opacity: 1}}
-      transition={{ duration: 0.6 }}>
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true, amount: 0.2 }}>
       <h1 className="text-3xl mb-5 ">Projetos em Destaque</h1>
 
       <div className="flex gap-10">
@@ -21,6 +22,7 @@ export default function Projects() {
             src={ProjectST}
             width={500}
             alt="Sorteador"
+            loading="lazy"
           />
           <h1 className="text-3xl mb-3 mt-5">Sorteador</h1>
           <p>
@@ -48,7 +50,8 @@ export default function Projects() {
             src={ProjectCG}
             width={500}
             height={20}
-            alt=""
+            alt="ClickGame"
+            loading="lazy"
           />
           <h1 className="text-3xl mb-3 mt-5">Click Game</h1>
           <p>

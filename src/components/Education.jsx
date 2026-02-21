@@ -21,7 +21,8 @@ export default function Education() {
             className="border border-gray-500 rounded-xl hover:border-white"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}>
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}>
             <h1 className="text-3xl">{title}</h1>
             <div>
                 {education.map((item, index) => (
