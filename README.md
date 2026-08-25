@@ -18,10 +18,10 @@ O objetivo deste projeto é centralizar minhas experiências, aprendizados e evo
 ## Como executar o projeto
 ```bash
 # clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+https://github.com/pedrpie/Portfolio.git
 
 # entrar na pasta
-cd seu-repositorio
+cd Portfolio
 
 # instalar dependências
 npm install
